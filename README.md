@@ -10,8 +10,11 @@ Includes:
 <li>Deleting Data from Firebase</li>
 </ol>
 
-Check out the demo at <a href="http://stackhive.com/site550a604302765/FirebaseDemo/homepage.html">
-http://stackhive.com/site550a604302765/FirebaseDemo/homepage.html</a>. 
+<h4>Watch it in action:</h4>
+<a href="https://youtu.be/wn6p5OA2puc" target="_blank">https://youtu.be/wn6p5OA2puc</a>
+<br>
+<h4>Playground</h4>
+<a target="_blank" href="http://stackhive.com/site550a604302765/FirebaseDemo/homepage.html">http://stackhive.com/site550a604302765/FirebaseDemo/homepage.html</a>. 
 Register 2 users and use 2 browsers to see the real-time app in action.
 
 Firebase is an amazing library that enables you to create real-time applications without worrying about the back-end coding.
