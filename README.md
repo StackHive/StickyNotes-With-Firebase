@@ -18,7 +18,9 @@ Includes:
 Register 2 users and use 2 browsers to see the real-time app in action.
 
 <h4>Blog Post</h4>
-<a href="http://blog.stackhive.com/post/114386894969/login-sign-up-and-a-real-time-app-using-firebase" target="_blank"http://blog.stackhive.com/post/114386894969/login-sign-up-and-a-real-time-app-using-firebase</a>
+<a href="http://blog.stackhive.com/post/114386894969/login-sign-up-and-a-real-time-app-using-firebase" target="_blank">http://blog.stackhive.com/post/114386894969/login-sign-up-and-a-real-time-app-using-firebase</a>
+
+<br>
 Firebase is an amazing library that enables you to create real-time applications without worrying about the back-end coding.
 You can easily extend it to build a real-time chat or your own Task List management like Trello!
 <br>
