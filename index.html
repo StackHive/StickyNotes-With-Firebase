@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description">
+        <meta name="author">
+        <title>
+            Real-time Shared Sticky Notes Using Bootstrap and Firebase
+        </title>
+		<!-- Bootstrap core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"><!-- Custom styles for this template -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link href="assets/css/sh-default.css" rel="stylesheet" default-stylesheet="true" type="text/css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body style="cursor: auto;">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><a class="navbar-brand" href>Realtime Shared Sticky Notes</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li>
+                            <a data-target="#login" href>Login</a>
+                        </li>
+                        <li>
+                            <a data-target="#register" href>Signup</a>
+                        </li>
+                        <li>
+                            <a data-target="#lists" href>Shared List</a>
+                        </li>
+                        <li>
+                            <a id="logout" href>Logout</a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+        <div class="welcome"></div>
+        <div class="container tab default" id="login">
+            <form class="form-signin" role="form">
+                <h2 class="form-signin-heading">
+                    <em class="stackhive-marker"></em>Login to your account
+                </h2>
+                <hr>
+                <input type="email" class="form-control" placeholder="Email address" required="" autofocus="" id="login-email"><input type="password" class="form-control" placeholder="Password"
+                required="" id="login-password">
+                <button class="btn btn-primary" type="button" id="login-btn">
+                    Login
+                </button>
+                <hr>
+                <div class="status alert alert-info hide"></div>
+            </form>
+        </div>
+        <div class="container tab hide" id="register">
+            <form class="form-signin" role="form">
+                <h2 class="form-signin-heading">
+                    Register a new account
+                </h2>
+                <hr>
+                <input type="text" class="form-control" placeholder="Your Name" required="" autofocus="" id="name"><input type="email" class="form-control" placeholder="Email address" required=""
+                autofocus="" id="email"><input type="password" class="form-control" placeholder="Password" required="" id="password">
+                <button class="btn btn-primary" type="button" id="signup-btn">
+                    Sign Me Up!
+                </button>
+            </form>
+            <hr>
+            <div class="status alert alert-info hide"></div>
+        </div>
+        <div class="container tab hide" id="lists">
+            <div class="status alert alert-info hide"></div><br>
+            <h3>
+                Add Items to the Shared List
+            </h3>
+            <p>
+                <textarea type="text" id="listitem" placeholder="Add content that you want to add to your list"></textarea><br>
+                <a id="addItemToList" class="btn btn-success">Add it to your list</a>
+            </p>
+            <hr>
+            <a class="btn btn-info" id="sort-items">View Aligned (for OCD fellows!)</a>
+            <ul id="sharedlist" class="sharedlist" data-widget-class="sharedlist"></ul>
+        </div><!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./firebasefunctions.js"></script>
+    </body>
+</html>

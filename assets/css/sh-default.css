@@ -1,0 +1,112 @@
+body {
+    overflow: visible!important;
+	padding-top: 50px
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center
+}
+.status {
+    clear: both
+}
+#lists .status {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 95px;
+    z-index: 500000
+}
+.tab input {
+    display: block;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin-bottom: 10px;
+    height: 40px
+}
+.sharedlist {
+    min-height: 1000px;
+    position: relative;
+    background: #f9f9f9;
+}
+.sharedlist li {
+    list-style: none;
+    display: inline-block;
+    width: 32%;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 20px;
+    cursor: move;
+    background: #25669d
+}
+.sharedlist li .itemauthor {
+    color: #fff;
+    padding: 5px 25px;
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0
+}
+.sharedlist li .itemauthor .time {
+    display: block;
+    font-size: 11px;
+    color: #dcdddc
+}
+.sharedlist li .itemtext {
+    padding: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    word-wrap: break-word;
+    background-color: #dddada
+}
+textarea {
+    width: 100%;
+    height: 80px
+}
+.btn {
+    -webkit-border-radius: 0;
+    border-radius: 0
+}
+.btn.btn-success {
+    border-width: 3px 0 0;
+    border-style: solid;
+    border-color: #252e5a #4cae4c #4cae4c;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #46acb3
+}
+ul {
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+.removebtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    color: #e6fff3;
+    height: 100%;
+    width: 24px;
+    padding-top: 13px;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    background: rgba(55, 55, 55, .690196)
+}
+.removebtn:hover {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+.newitem {
+    z-index: 10
+}
+.btn.btn-info {
+    margin-bottom: 15px;
+    background-color: #4d6899
+}
